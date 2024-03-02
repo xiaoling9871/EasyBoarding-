@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: visa-management-service
+  mvc:
+    servlet:
+      path: /visa-management-service
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
