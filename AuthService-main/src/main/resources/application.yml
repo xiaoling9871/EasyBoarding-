@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://Database-3.cm5gppynls7w.us-east-1.rds.amazonaws.com:3306/GroupProject
+    username: admin
+    password: Yym980522
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  mvc:
+    servlet:
+      path: /auth
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+  application:
+    name: auth-service
+
+security:
+  jwt:
+    token:
+      key: javaTraining
+
+server:
+  port: 8081
+
